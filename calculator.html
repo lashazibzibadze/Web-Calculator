@@ -1,42 +1,51 @@
 <html>
   <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="calculator.css" />
   </head>
 
   <body>
-    
-    <h1>Calculator</h1>
-    <div class="displayContainer">
-      <span id="display"></span>
+    <div class="h1-container">
+      <h1>Calculator</h1>
     </div>
-    
-    <div class="flexContainer">
-      <button class="button number">7</button>
-      <button class="button number">8</button>
-      <button class="button number">9</button>
-      <button class="button operator">/</button>
-      
-      <button class="button number">4</button>
-      <button class="button number">5</button>
-      <button class="button number">6</button>
-      <button class="button operator">*</button>
-      
-      <button class="button number">1</button>
-      <button class="button number">2</button>
-      <button class="button number">3</button>
-      <button class="button operator">-</button>
-      
-      <button class="button number">0</button>
-      <button class="button decimal">.</button>
-      <button class="button equals">=</button>
-      <button class="button operator">+</button>
-      
-      <button class="button parenthesis">(</button>
-      <button class="button parenthesis">)</button>
-      <button class="button clear">CE</button>
+
+    <div class="display-master">
+      <div class="displayContainer">
+        <span id="display"></span>
+      </div>
     </div>
-    
-    <script src="calculator.js"></script>
+
+    <div class="master-container">
+      <div class="flexContainer">
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button operator">/</button>
+
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operator">*</button>
+
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button operator">-</button>
+
+        <button class="button number">0</button>
+        <button class="button decimal">.</button>
+        <button class="button equals">=</button>
+        <button class="button operator">+</button>
+
+        <!-- non functional button for design, U+200E is a white space-->
+        <button class="button">‎</button>
+        <button class="button parenthesis">(</button>
+        <button class="button parenthesis">)</button>
+        <button class="button clear">CE</button>
+      </div>
+    </div>
+
+    <script type="module" src="calculator-logic.js"></script>
+    <script type="module" src="calculator.js"></script>
   </body>
 </html>
